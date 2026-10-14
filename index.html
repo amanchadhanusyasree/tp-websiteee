@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mahi 💙</title>
+    <meta name="theme-color" content="#eaf7ff">
+    <meta name="description" content="A little something made just for Mahi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- New user-provided scrapbook accents -->
+    <div class="scrapbook-art" aria-hidden="true">
+        <img class="ocean-collage ocean-top-left" src="_.jpeg" alt="">
+        <img class="ocean-collage ocean-top-right" src="_.jpeg" alt="">
+        <img class="ocean-collage ocean-bottom-left" src="_.jpeg" alt="">
+        <img class="ocean-collage ocean-bottom-right" src="_.jpeg" alt="">
+        <img class="lettering-collage" src="Best%20Display%20Fonts%2C%20Canva%20Font%2C%20Unique%20Fonts%2C%20Cute%20Font%2C%20Playful%20for%20Headlines%2C%20Logos%20%26%20Posters%20%F0%9F%8E%A8%E2%9C%A8.jpeg" alt="">
+    </div>
+
+    <!-- Ambient background and decorative particles -->
+    <div class="sky" aria-hidden="true">
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="cloud cloud-three"></div>
+        <div class="ambient-particles" id="ambient-particles"></div>
+    </div>
+
+    <!-- Persistent sound control -->
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Turn background music on" aria-pressed="false">
+        <span class="sound-icon" aria-hidden="true">♫</span>
+        <span class="sound-label">Music off</span>
+    </button>
+    <main class="experience" id="experience">
+        <!-- Page one: welcome -->
+        <section class="scene scene-active" id="welcome" aria-labelledby="welcome-title">
+            <div class="intro-card glass-card">
+                <div class="eyebrow"><span class="tiny-heart">♥</span> a little note for you</div>
+                <div class="gift-illustration" aria-hidden="true"><span class="gift-bow">✦</span><span class="gift-box">🎁</span></div>
+                <h1 id="welcome-title">Hi Mahi <span class="blue-heart">💙</span></h1>
+                <p class="lead">I made something just for you...</p>
+                <button class="button button-primary" id="open-gift" type="button">Open My Gift <span>🎁</span></button>
+                <div class="card-footnote"><span>made with</span> <span class="footnote-heart">♥</span> <span>by Dhanu</span></div>
+            </div>
+        </section>
+
+        <!-- Page two: apology question -->
+        <section class="scene" id="apology" aria-labelledby="apology-title" aria-hidden="true" inert>
+            <div class="apology-card glass-card">
+                <img class="apology-kitten" src="ط.jpeg" alt="An orange kitten wearing a blue party hat with balloons, a cake, and a present">
+                <div class="eyebrow">from my heart to yours</div>
+                <h2 id="apology-title">Accept my apology?</h2>
+                <p class="apology-copy">I know I made you upset.<br>I never wanted to hurt you.<br>Can you forgive me?</p>
+                <p class="no-message" id="no-message" aria-live="polite"></p>
+                <div class="answer-buttons">
+                    <button class="button button-primary" id="yes-button" type="button">YES <span>💙</span></button>
+                    <button class="button button-soft" id="no-button" type="button">NO <span>🙈</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page three: interactive envelope -->
+        <section class="scene" id="envelope-scene" aria-labelledby="envelope-title" aria-hidden="true" inert>
+            <div class="envelope-card glass-card">
+                <div class="eyebrow">something I wanted to say</div>
+                <h2 id="envelope-title">A little letter for you</h2>
+                <p class="envelope-hint" id="envelope-hint">Click to Open</p>
+                <button class="envelope-wrap" id="open-envelope" type="button" aria-label="Open the letter">
+                    <span class="letter-paper" aria-hidden="true"><span>For Mahi</span><span class="paper-heart">♥</span></span>
+                    <span class="envelope-back" aria-hidden="true"></span>
+                    <span class="envelope-flap" aria-hidden="true"></span>
+                    <span class="envelope-front" aria-hidden="true"></span>
+                    <span class="envelope-seal" aria-hidden="true">♥</span>
+                </button>
+                <p class="envelope-caption">sealed with all my love</p>
+            </div>
+        </section>
+
+        <!-- Page four: typewritten apology letter -->
+        <section class="scene" id="letter-scene" aria-labelledby="letter-title" aria-hidden="true" inert>
+            <article class="letter-card">
+                <div class="letter-topline"><span> A NOTE FOR MAHI</span><span>♡</span></div>
+                <h2 id="letter-title">Dear Mahi,</h2>
+                <div class="letter-body" id="letter-body" aria-live="polite"></div>
+                <div class="letter-scroll-cue" id="letter-scroll-cue" hidden><span aria-hidden="true">↕</span> More of my note below</div>
+                <div class="letter-signoff" id="letter-signoff" hidden>With love, <span>Dhanu</span> <span>♥</span></div>
+                <button class="button button-primary continue-button" id="continue-button" type="button" hidden>Continue <span>❤️</span></button>
+            </article>
+        </section>
+
+        <!-- Page five: warm closing -->
+        <section class="scene" id="thanks" aria-labelledby="thanks-title" aria-hidden="true" inert>
+            <div class="thanks-card glass-card">
+                <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+                <img class="closing-kitten" src="ط.jpeg" alt="The same orange kitten wearing a blue party hat with balloons, a cake, and a present">
+                <div class="eyebrow">a little more love</div>
+                <h2 id="thanks-title">Thank you for reading.</h2>
+                <p class="closing-copy">No matter what...<br>I hope this made you smile.</p>
+                <button class="button button-primary" id="start-again" type="button">Start Again <span>💙</span></button>
+                <div class="closing-hearts" aria-hidden="true">♡ &nbsp; ♥ &nbsp; ♡</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mouse sparkle layer -->
+    <div class="sparkle-layer" id="sparkle-layer" aria-hidden="true"></div>
+    <div class="screen-reader-only" id="live-status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
